@@ -1,0 +1,37 @@
+.form{
+
+    .formulario{
+        grid-area: formulario;
+    }
+
+    .imgF{
+        grid-area: imgF;
+    }
+
+    padding: 50px 100px 0px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    img{
+        padding: 10px;
+        width: 350px;
+        height: 500px;
+    }
+
+    .formulario{
+        @include text-blanco;
+        padding: 40px;
+        width: 600px;
+        height: 500px;
+        border-radius: 20px;
+        background-color: rgba(70, 0, 0);
+        
+        .comentario{
+            padding: 20px 20px 50px 20px;
+            @include text-blanco;
+        }
+    }
+}
+
+

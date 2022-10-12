@@ -1,0 +1,70 @@
+@import "generales";
+@import "escuelas";
+@import "casas";
+@import "patronus";
+@import "sugerencias";
+ 
+/* Mobile firts  0px - 500px */
+
+
+
+
+
+.body{
+    font-family: 'Shadows Into Light', cursive;
+}
+
+
+.barra{
+    position:sticky;
+    background-color: rgba(19, 7, 87);
+}
+
+.arriba{
+    background-image: url(../img/Fondoindex.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.espacio{
+    padding: 200px 0px 200px 0px;
+}
+
+.parrafoInicio{
+    padding: 50px;
+    align-content: center;
+}
+
+
+@media (min-width: 1024px) {
+    
+    .barra{
+        position:sticky;
+        background-color: rgba(19, 7, 87);
+        align-items: right;
+    }
+    
+    .arriba{
+        background-image: url(../img/Hogwarts.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+    
+
+
+    
+    .parrafoInicio{
+        padding: 50px 200px 0px 200px;
+        align-content: center;
+    }
+    
+    
+    
+
+    
+
+    
+    }
+
+
+

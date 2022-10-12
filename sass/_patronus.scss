@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
+
+.patronus{
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+    gap: 2em;
+    justify-items: center;
+    object-fit: cover;
+    
+    .animal{
+        padding: 10px;
+        border: double 2px #111;
+    }
+    
+    h3{
+        padding: 10px;
+        font-family: 'Alkalami', serif;
+        font-size: 30px;
+        color: #111;
+        text-align: center;
+    }
+
+    p{
+        color: black;
+    }
+    @media (min-width: 1024px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+    
+}
+
+.imgA{
+    width: 200px;
+    height: 200px;
+
+}

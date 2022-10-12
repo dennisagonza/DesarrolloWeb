@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
-    <title>Casas</title>
+    <title>Harry Potter</title>
 </head>
 <body>
-    <header>
+    <header class="header2">
         <nav class="navbar navbar-expand-lg navbar-dark barra">
             <div class="container-fluid">
                 <img src="../img/LogoHP.png" alt="LogoHP" class="logo">
@@ -38,55 +38,34 @@
             </div>
         </nav>
     </header>
-    <main>
-        <h1><strong>Casas de Hogwarts</strong></h1>
-        <section class="gridPadre">
-            <div class="casas">
-                <div class="imgCasas">
-                    <img src="../img/gryffindor.jpg" alt="Gryffindor" width="218px" height="300px">
-                </div>
-                <div class="info">
-                    <p>Fundador: Godric Gryffindor</p>
-                    <p>Colores: Escarlata y oro</p>
-                    <p>Animal: León </p>
-                    <p>Elemento: Fuego</p>
-                </div>
-            </div>
-            <div class="casas">
-                <div class="imgCasas">
-                    <img src="../img/slytherin.jpg" alt="Gryffindor" width="218px" height="300px">
-                </div>
-                <div class="info">
-                    <p>Fundador: Godric Salazar Slytherin</p>
-                    <p>Colores: Verde y plateado</p>
-                    <p>Animal: Serpiente</p>
-                    <p>Elemento: Agua</p>
-                </div>
-            </div>
-            <div class="casas">
-                <div class="imgCasas">
-                    <img src="../img/ravenclaw.jpg" alt="Ravenclaw" width="218px" height="300px">
-                </div>
-                <div class="info">
-                    <p>Fundador: Rowena Ravenclaw</p>
-                    <p>Colores: Azul y bronce</p>
-                    <p>Animal: Águila</p>
-                    <p>Elemento: Aire</p>
+    <body>
+        <main>
+            <h1>
+                Sugerencias
+            </h1>
+            <section class="form">
+                <div class="formulario">
+                    <div class="comentario" >
+                        Ingresa tu email y comentario con la sugerencia para mejorar nuestra pagina web 
                     </div>
-            </div>
-            <div class="casas">
-                <div class="imgCasas">
-                    <img src="../img/hufflepuff.jpg" alt="Hufflepuff" width="218px" height="300px">
-                </div>                
-                <div class="info">
-                    <p>Fundador: Helga Hufflepuff</p>
-                    <p>Colores: Amarillo y negro</p>
-                    <p>Animal: Tejón</p>
-                    <p>Elemento: Tierra</p>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Comentario o Sugerencia</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div> 
+                <div class="imgF">
+                    <img src="../img/form.jpg" alt="HP">
                 </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
+    </body>
 
     <footer>
         <div class="pie">
@@ -96,7 +75,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-
 </body>
-
 </html>
