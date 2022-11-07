@@ -41,17 +41,29 @@
 }
 
 .imgEscuelas{
-    width: 400px;
-    height: 200px;
     margin: 20px;
     justify-self: center;
     object-fit: cover;
+    @media (max-width: 620px) {
+        width: 200px;
+        height: 100px;
+    }
+    
+    @media (min-width: 620px) {
+        width: 400px;
+        height: 200px;
+    }
     
 }
 
 .titulo{
     padding: 20px;
     @include text-titulos;
+
+    @media (max-width: 620px){
+        font-size: 20px;
+    }
+
 }
 
 .titulo-H{

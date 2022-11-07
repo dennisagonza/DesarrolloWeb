@@ -9,7 +9,7 @@
     
     .animal{
         padding: 10px;
-        border: double 2px #111;
+        border: 2px dashed #111;
     }
     
     h3{
@@ -21,6 +21,7 @@
     }
 
     p{
+        padding: 0px;
         color: black;
     }
     @media (min-width: 1024px) {
@@ -34,4 +35,19 @@
     width: 200px;
     height: 200px;
 
+}
+
+.infoPatronus{
+
+    p{
+        padding:0px 150px 50px 150px;
+        text-align: center;
+        color: black;
+
+        @media (max-width: 850px) {
+            padding:0px 100px 50px 100px;
+        }
+
+
+    }
 }

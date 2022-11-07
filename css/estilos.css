@@ -1,6 +1,7 @@
 @import url("http://fonts.cdnfonts.com/css/harry-potter");
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alkalami&display=swap");
+@import url("http://fonts.cdnfonts.com/css/harry-potter");
 * {
   padding: 0;
   margin: 0;
@@ -20,10 +21,26 @@ main {
 
 h1 {
   font-family: "Harry Potter", sans-serif;
-  font-size: 80px;
-  color: black;
   text-align: center;
   padding: 50px 0px 20px;
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 40px;
+    color: black;
+  }
+}
+@media (min-width: 480px) and (max-width: 1024px) {
+  h1 {
+    font-size: 60px;
+    color: black;
+  }
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 80px;
+    color: black;
+  }
 }
 
 a {
@@ -86,12 +103,22 @@ footer .pie {
 }
 
 .imgEscuelas {
-  width: 400px;
-  height: 200px;
   margin: 20px;
   justify-self: center;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 620px) {
+  .imgEscuelas {
+    width: 200px;
+    height: 100px;
+  }
+}
+@media (min-width: 620px) {
+  .imgEscuelas {
+    width: 400px;
+    height: 200px;
+  }
 }
 
 .titulo {
@@ -99,6 +126,11 @@ footer .pie {
   color: white;
   font-size: 30px;
   font-family: "Shadows Into Light", cursive;
+}
+@media (max-width: 620px) {
+  .titulo {
+    font-size: 20px;
+  }
 }
 
 .titulo-H {
@@ -172,16 +204,24 @@ p {
   text-align: left;
   align-self: center;
 }
+.info p {
+  padding: 0;
+  margin: 0;
+}
 
 .gridPadre {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 4fr;
+  margin: 50px;
   gap: 1em;
-  justify-items: center;
-  padding: 50px;
 }
-@media (min-width: 1024px) {
+@media (max-width: 900px) {
+  .gridPadre {
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr;
+    justify-items: center;
+  }
+}
+@media (min-width: 900px) {
   .gridPadre {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -194,13 +234,18 @@ p {
   border-radius: 10px 30px;
   overflow: hidden;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 400px;
-  height: 450px;
 }
-@media (min-width: 1024px) {
+@media (max-width: 510px) {
   .casas {
-    width: 500px;
+    grid-template-rows: 1fr 1fr;
+    width: 300px;
+    height: 450px;
+  }
+}
+@media (min-width: 510px) {
+  .casas {
+    grid-template-columns: 1fr 1fr;
+    width: 450px;
     height: 400px;
     border-radius: 10px 20px;
   }
@@ -216,10 +261,10 @@ p {
   -o-object-fit: cover;
      object-fit: cover;
 }
-@media (min-width: 1024px) {
-  .imgCasas {
-    width: 100%;
-  }
+
+.imagenCasas {
+  width: 218px;
+  height: 300px;
 }
 
 .patronus {
@@ -232,7 +277,7 @@ p {
 }
 .patronus .animal {
   padding: 10px;
-  border: double 2px #111;
+  border: 2px dashed #111;
 }
 .patronus h3 {
   padding: 10px;
@@ -242,6 +287,7 @@ p {
   text-align: center;
 }
 .patronus p {
+  padding: 0px;
   color: black;
 }
 @media (min-width: 1024px) {
@@ -254,6 +300,17 @@ p {
 .imgA {
   width: 200px;
   height: 200px;
+}
+
+.infoPatronus p {
+  padding: 0px 150px 50px 150px;
+  text-align: center;
+  color: black;
+}
+@media (max-width: 850px) {
+  .infoPatronus p {
+    padding: 0px 100px 50px 100px;
+  }
 }
 
 .form {
@@ -270,6 +327,7 @@ p {
 }
 .form img {
   padding: 10px;
+  justify-self: center;
   width: 350px;
   height: 500px;
 }
